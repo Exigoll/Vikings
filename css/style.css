@@ -127,4 +127,41 @@ body {
 .about__text p {
   margin-bottom: 25px;
 }
+
+.video {
+  background: url(/img/background-section1.png) no-repeat center/cover;
+  height: 100vh;
+  text-align: right;
+}
+
+.video__text {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 84px;
+  color: #85CCDC;
+  padding-top: 444px;
+  margin-bottom: 40px;
+}
+
+.video__text span {
+  display: block;
+  padding-right: 300px;
+}
+
+.video__btn {
+  padding-left: 112px;
+  position: relative;
+  margin-right: 250px;
+}
+
+.video__btn::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 0;
+  top: -40px;
+  background-image: url(/img/icons/youtube.svg);
+}
 /*# sourceMappingURL=style.css.map */

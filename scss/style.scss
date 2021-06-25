@@ -109,3 +109,36 @@ body {
       margin-bottom: 25px;
    }
 }
+.video {
+   background: url(/img/background-section1.png) no-repeat center / cover;
+   height: 100vh;
+   text-align: right;
+   &__text {
+      font-style: italic;
+      font-weight: 300;
+      font-size: 72px;
+      line-height: 84px;
+      color: $turquoise;
+      padding-top: 444px;
+      margin-bottom: 40px;
+   }
+   &__text span {
+      display: block;
+      padding-right: 300px;
+   }
+   &__btn {
+      padding-left: 112px;
+      position: relative;
+      margin-right: 250px;
+      
+   }
+   &__btn::after {
+      content: '';
+      position: absolute;     
+      height: 100px;
+      width: 100px;
+      left: 0;
+      top: -40px;
+      background-image: url(/img/icons/youtube.svg);
+   }
+}
