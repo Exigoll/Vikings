@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/slick.css">
 	<link rel="stylesheet" href="/css/jquery.fancybox.css">
 	<link rel="stylesheet" href="/css/style.css">
 	<title>Vikings</title>
@@ -58,7 +59,7 @@
 						</li>
 					<li class="about__info-item">
 						На экранах
-						<span>С 3 марта 2013 по сей день</span>
+						<span>с 3 марта 2013<br>по 30 декабря 2020</span>
 					</li>
 				</ul>
 				<div class="about__text">
@@ -81,14 +82,84 @@
 			<a class="video__btn" data-fancybox href="https://www.youtube.com/watch?v=1YVxm0GKhkM">Посмотреть трейлер сериала</a>
 		</div>
 	</section>
-
-
-
-
-
-
+	<section class="season section-page">
+		<div class="container">
+			<h3 class="title">
+				Все сезоны
+			</h3>
+			<ol class="season__inner">
+				<li class="season__item" style="background-image: url(/img/season-1.png)">
+					<a class="season__link" href="#">смотреть</a>
+				</li>
+				<li class="season__item" style="background-image: url(/img/season-2.png)">
+					<a class="season__link" href="#">смотреть</a>
+				</li>
+				<li class="season__item" style="background-image: url(/img/season-3.png)">
+					<a class="season__link" href="#">смотреть</a>
+				</li>
+				<li class="season__item" style="background-image: url(/img/season-4.png)">
+					<a class="season__link" href="#">смотреть</a>
+				</li>
+				<li class="season__item" style="background-image: url(/img/season-5.png)">
+					<a class="season__link" href="#">смотреть</a>
+				</li>
+				<li class="season__item" style="background-image: url(/img/season-6.png)">
+					<a class="season__link" href="#">смотреть</a>
+				</li>
+			</ol>
+		</div>
+	</section>
+	<section class="heroes section-page">
+		<div class="container">
+			<h3 class="title">Главные герои</h3>
+			<div class="heroes__inner">
+				<div class="heroes__slider-img">
+					<img class="heroes__images" src="/img/rognar.png" alt="Rognar">
+					<img class="heroes__images" src="/img/lagerta.png" alt="Lagerta">
+					<img class="heroes__images" src="/img/floki.png" alt="Floki">
+				</div>
+				<div class="heroes__slider-text">
+					<div class="heroes__text">
+						<h4 class="heroes__name">Рагнар</h4>
+						<p>
+							Рагна́р Лодбро́к (др.-сканд. Ragnarr Loðbrók) - полулегендарный скандинавский конунг из рода Инглингов, ключевой персонаж сериала.
+						</p>
+						<p>
+							Умелый воин и амбициозный вождь, Рагнар на протяжении почти всей своей жизни следует пути викинга. Рассекая море в поисках боевой славы и наживы, он стремится обрести новые знания, открыть неизвестные земли и изменить нелегкую судьбу своего народа, живущего в суровых условиях Скандинавского полуострова
+						</p>
+					</div>
+					<div class="heroes__text">
+						<h4 class="heroes__name">Лагерта</h4>
+						<p>
+							Лаге́рта (или Хладге́рда, др.-сканд. Hlaðgerðr, лат. Ladgerda,
+						</p>
+						<p>
+							Ladgertha или Lagertha; в сериале также носит псевдоним Ингстад) - известная скандинавская воительница, упомянутая в хрониках Саксона Грамматика, первая жена датского морского конунга Рагнара Лодброка. В сериале Лагерта активно участвует в походах викингов, колонизации ими новых земель и междоусобных распрях скандинавских вождей.
+						</p>
+					</div>
+					<div class="heroes__text">
+						<h4 class="heroes__name">Флоки</h4>
+						<p>
+							Флóки (др.-сканд. Flóki) - скандинавский кораблестроитель, активно участвующий в грабительских набегах викингов на страны Европы.
+						</p>
+						<p>
+							Близкий друг и соратник Рагнара Лодброка. Эксцентричный и чудаковатый, он живет в уединенном доме в лесу, работая в своей мастерской на берегу моря.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<a class="copy" href="https://www.aenetworks.com/copyright" target="_blank">
+				Сериал «Викинги». Правами на сериал владеет канал History.
+			</a>
+		</div>
+	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="/js/slick.min.js"></script>
 	<script src="/js/jquery.fancybox.min.js"></script>
 	<script src="/js/main.js"></script>
 </body>

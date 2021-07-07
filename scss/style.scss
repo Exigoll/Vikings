@@ -75,20 +75,18 @@ body {
   &__list-link {
      transition: all 0.5s;
   }
-  &__list-link:hover {
+  &__list-link:hover,
+  &__list-link--active {
      color: $turquoise;
      text-decoration: underline;
-  }
+   }
 }
 .logo {
    padding-top: 178px;
-  &__img {
-  }
 }
 .about {
    &__inner {
       display: flex;
-      
    }
    &__info {
       width: 375px;
@@ -101,9 +99,6 @@ body {
    }
    &__info-item span {
       display: block;
-   }
-   &__text {
-      
    }
    &__text p {
       margin-bottom: 25px;
@@ -130,7 +125,6 @@ body {
       padding-left: 112px;
       position: relative;
       margin-right: 250px;
-      
    }
    &__btn::after {
       content: '';
@@ -142,3 +136,132 @@ body {
       background-image: url(/img/icons/youtube.svg);
    }
 }
+.season {
+   &__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 100px 75px;
+      counter-reset: counter;
+   }
+   &__item {
+      width: 350px;
+      height: 250px;
+      background: no-repeat center / cover;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   &__item:hover::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(14, 14, 14, 0.8);
+   }
+   &__item:hover &__link{
+      opacity: 1;
+   }
+   &__item::before {
+      content: '0' counter(counter);
+      counter-increment: counter;
+      position: absolute;
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 112px;
+      color: $burgundy;
+      top: -72px;
+      left: 0;
+      z-index: -1;
+   }
+   &__link {
+      font-size: 36px;
+      line-height: 42px;
+      padding: 12px 78px 11px;
+      background-color: #0E0E0E;
+      opacity: 0;
+      transition: all .3s;
+      z-index: 2;
+   }
+}
+.heroes {
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+   }
+   &__slider-img {
+      max-width: 775px;
+   }
+   &__slider-text {
+      max-width: 350px;
+   }
+   &__text p {
+      margin-bottom: 30px;
+   }
+   &__name {
+      font-weight: 300;
+      font-style: italic;
+      font-size: 72px;
+      line-height: 84px;
+      color: $turquoise;
+      margin-bottom: 44px;
+   }
+}
+.slick-btn {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background: transparent;
+   border: none;
+   cursor: pointer;
+   z-index: 5;
+}
+.slick-prev {
+   left: 38px;
+}
+.slick-next {
+   right: 38px;
+}
+.copy {
+   display: block;
+   text-align: center;
+   padding: 14px;
+}
+
+/* season 1 */
+.page-header {
+   background: url(/img/season-1-bg.png) no-repeat center / cover;
+   height: 90vh;
+   position: relative;
+   &__top {
+   }
+ }
+ .season-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 1385px;
+    display: flex;
+    margin: 0 auto;
+    padding: 44px 47px 64px 35px;
+    background-color: $black;
+   &__num {
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 60px;
+      text-align: center;
+      margin-right: 45px;
+   }
+   &__num span {
+      display: block;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+   }
+   &__text p {
+      margin-bottom: 30px;     
+   }
+ } 
