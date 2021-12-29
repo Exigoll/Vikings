@@ -43,7 +43,7 @@ body {
    padding: 100px 0;
 }
 .header {
-   background: url(/img/background-header.jpg) no-repeat center 50px /cover;
+   background: url(../img/background-header.jpg) no-repeat center 50px /cover;
    height: 100vh;
    text-align: center;
    position: relative;
@@ -105,7 +105,7 @@ body {
    }
 }
 .video {
-   background: url(/img/background-section1.png) no-repeat center / cover;
+   background: url(../img/background-section1.png) no-repeat center / cover;
    height: 100vh;
    text-align: right;
    &__text {
@@ -133,7 +133,7 @@ body {
       width: 100px;
       left: 0;
       top: -40px;
-      background-image: url(/img/icons/youtube.svg);
+      background-image: url(../img/icons/youtube.svg);
    }
 }
 .season {
@@ -233,7 +233,7 @@ body {
 
 /* season 1 */
 .page-header {
-   background: url(/img/season-1-bg.png) no-repeat center / cover;
+   background: url(../img/season-1-bg.png) no-repeat center / cover;
    height: 90vh;
    position: relative;
 }
